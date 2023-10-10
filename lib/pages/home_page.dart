@@ -302,17 +302,21 @@ class _HomePageState extends State<HomePage> {
                               value: _selectedBatch,
                               items: [
                                 'Select',
-                                '19.2',
-                                '20.1',
-                                '20.2',
-                                '20.3',
-                                '21.1',
-                                '21.2',
-                                '22.1',
-                                '22.2',
-                                '23.1',
-                                '23.2',
-                                '23.3'
+                                'SP 19',
+                                'FA 19',
+                                'SP 20',
+                                'FA 20',
+                                'SP 21',
+                                'FA 21',
+                                'SP 22',
+                                'FA 22',
+                                'SP 23',
+                                'FA 23',
+                                // 'C 2.1',
+                                // 'C 2.2',
+                                // 'C 2.3',
+                                // 'C 2.4',
+                                // 'C 2.5',
                               ],
                               onChanged: (String? newValue) {
                                 setState(() {
@@ -325,13 +329,13 @@ class _HomePageState extends State<HomePage> {
 
                             // University Dropdown
                             ThemedDropdown(
-                              label: 'University',
+                              label: 'Department',
                               value: _selectedUniversity,
                               items: [
                                 'Select',
-                                'NSBM - UGC - SL',
-                                'Plymouth U - UK',
-                                'Victoria U - Aus',
+                                'Computer Science & Software Engineering',
+                                'Management & Business Studies',
+                                'Engineering & Technology',
                               ],
                               onChanged: (String? newValue) {
                                 setState(() {
@@ -360,9 +364,6 @@ class _HomePageState extends State<HomePage> {
                               'Bachelor of Information Technology\n(Major in Cyber Security)',
                               'BSc (Hons) Computer Science',
                               'BSc (Hons) Software Engineering',
-                              'BSc (Hons) Technology Management   ',
-                              'BSc in Management Information\nSystems (Special)',
-                              'Foundation Programme for\nBachelors Degree',
                             ],
                             onChanged: (String? newValue) {
                               setState(() {
@@ -777,8 +778,6 @@ class _HomePageState extends State<HomePage> {
                         _buildButton6(context, 'FOSS Community'),
                         _buildButton5(context, 'CSSL GenZ NSBM'),
                         _buildButton4(context, 'CSSE Circle'),
-                        
-                        
                       ],
                     ),
                   );
@@ -799,8 +798,6 @@ class _HomePageState extends State<HomePage> {
                       fit: BoxFit.cover,
                     ),
                     const SizedBox(width: 10),
-
-                    
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -822,8 +819,6 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                     const SizedBox(width: 20),
-
-                    
                     const Icon(
                       Icons.arrow_forward_ios,
                       size: 24,

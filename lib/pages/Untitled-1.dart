@@ -30,19 +30,48 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   // Function to handle the signup
+  // void _handleSignIn() {
+  //   if (_formkey.currentState!.validate()) {
+  //     // Simulate successful sign-up
+
+  //     showDialog(
+  //       context: context,
+  //       builder: (BuildContext context) {
+  //         return AlertDialog(
+  //           title:
+  //               const Text("Email or Password is incorrect. Please try again!"),
+  //           actions: [
+  //             TextButton(
+  //               onPressed: () {
+  //                 Navigator.of(context).pop(); // Close the dialog
+  //                 Navigator.push(
+  //                   context,
+  //                   MaterialPageRoute(builder: (context) => const LoginPage()),
+  //                 );
+  //               },
+  //               child: const Text("OK"),
+  //             ),
+  //           ],
+  //         );
+  //       },
+  //     );
+  //   }
+  // }
   void _handleSignIn() {
-    if (_formkey.currentState!.validate()) {
+    if (_formKey.currentState!.validate()) {
       final enteredEmail = emailController.text;
       final enteredPassword = passwordController.text;
 
       // Replace the following condition with your hardcoded credentials
-      if (enteredEmail == 'shahri@gmail.com' && enteredPassword == '112211') {
+      if (enteredEmail == 'your_default_email@example.com' &&
+          enteredPassword == 'your_default_password') {
         // Navigate to the home screen or any other screen upon successful login
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => const NavBar()),
         );
       } else {
+        // Display an error message for invalid credentials
         showDialog(
           context: context,
           builder: (BuildContext context) {
@@ -53,11 +82,6 @@ class _LoginPageState extends State<LoginPage> {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).pop(); // Close the dialog
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const LoginPage()),
-                    );
                   },
                   child: const Text("OK"),
                 ),
@@ -280,7 +304,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                             TextSpan(
-                              text: ' CUI Assistant',
+                              text: ' CUI Assist',
                               style: TextStyle(
                                 color: Color(0xFF555555),
                                 fontSize: 24,

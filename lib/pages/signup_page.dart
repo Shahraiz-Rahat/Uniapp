@@ -207,7 +207,7 @@ class _SignUpState extends State<SignUp> {
                               ),
                             ),
                             TextSpan(
-                              text: ' iNfo',
+                              text: ' CUI Assistant',
                               style: TextStyle(
                                 color: Color(0xFF555555),
                                 fontSize: 24,

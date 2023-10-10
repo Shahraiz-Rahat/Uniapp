@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       home: AnimatedSplashScreen(
         nextScreen: const LoginPage(),
         splash: Image.asset(
-          'assets/images/infologo.png',
+          'assets/images/1.jpeg',
         ),
         splashTransition: SplashTransition.fadeTransition,
         backgroundColor: Colors.white,
